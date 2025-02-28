@@ -16,6 +16,14 @@ FetchContent_Declare(
     GIT_REPOSITORY https://github.com/raysan5/raylib.git
     GIT_TAG master  # Eller specificera en version, t.ex. v4.0
 )
+# Anpassningar för Raspberry Pi
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    message(STATUS "Bygger för Raspberry Pi")
+    set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)  # Inga exempel
+    set(BUILD_GAMES OFF CACHE BOOL "" FORCE)     # Inga spel
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DPLATFORM_RPI")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DPLATFORM_RPI")
+endif()
 
 # Bygg Raylib som ett statiskt bibliotek (istället för ett delat bibliotek)
 set(RAYLIB_BUILD_SHARED OFF CACHE BOOL "Build Raylib as a static library")
