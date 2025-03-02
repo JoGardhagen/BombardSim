@@ -35,7 +35,7 @@ FetchContent_MakeAvailable(raylib)
 file(COPY ${CMAKE_SOURCE_DIR}/assets/ DESTINATION ${CMAKE_BINARY_DIR}/assets)
 
 # Lägg till dina källkodsfil
-add_executable(Simulation main.cpp Payload.cpp Aircraft.cpp Dropdownmenu.cpp FatMan.cpp)
+add_executable(Simulation main.cpp Payload.cpp Aircraft.cpp Dropdownmenu.cpp FatMan.cpp)#här ska du lägga in din klass'.cpp' som du vill implementera  
 
 # Länka Raylib till vårt projekt
 target_link_libraries(Simulation raylib)
