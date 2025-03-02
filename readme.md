@@ -51,3 +51,10 @@ Spelet låter dig släppa olika objekt från ett flygplan, justera vindhastighet
 - **Bibliotek:** Raylib
 - **Byggsystem:** CMake
 - **Plattform:** macOS
+
+## Kortfattat om 
+Raylib är ett enkelt och lättanvänt C-bibliotek för att skapa spel och grafiska<br>
+applikationer. Det är designat för att vara lätt att komma igång med och används
+<br> ofta för 2D- och 3D-rendering. Biblioteket innehåller funktioner för grafik,<br> ljud, fysik och inmatning, vilket gör det till ett kraftfullt verktyg för <br>både nybörjare och erfarna utvecklare.
+
+<br>Raylib är plattformsoberoende och fungerar på Windows, macOS och Linux. Det är <br>särskilt populärt inom utbildning och hobbyprojekt tack vare sin enkla API och <br>få beroenden.
